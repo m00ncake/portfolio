@@ -7561,6 +7561,11 @@ p {
   display: block;
   position: relative;
 }
+
+.fh5co-project > a:last-child {
+  border: 5px solid #494c4e;
+
+}
 .fh5co-project > a .fh5co-overlay {
   position: absolute;
   left: 0;
