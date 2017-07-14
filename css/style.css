@@ -7423,13 +7423,13 @@ p {
   }
 }
 .fh5co-intro-wrap .fh5co-intro a {
-  color: #494c4e;
+  color: rgba(73, 76, 78, 0.64);
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   text-decoration: none;
   margin: 0 8px;
 }
 .fh5co-intro-wrap .fh5co-intro a:hover {
-  color: #696D70;
+  color: #1b6d85;
   border-bottom: 1px solid white;
   text-decoration: none;
 }
@@ -7563,7 +7563,7 @@ p {
 }
 
 .fh5co-project > a:last-child {
-  border: 5px solid #494c4e;
+  border: 3px solid #494c4e;
 
 }
 .fh5co-project > a .fh5co-overlay {
@@ -7667,6 +7667,14 @@ p {
     width: 100%;
 
   }
+  .header-logo {
+    margin: 10px;
+  }
+  .header-logo-border {
+    margin: 10px;
+    width: 45px;
+  }
+
   .fh5co-intro-lead.animate-1.to-animate {
     font-size: 32px;
   }
@@ -7763,4 +7771,85 @@ p {
   opacity: 0;
 }
 
-/*# sourceMappingURL=style.css.map */
+/***** Header Navbar ******/
+.header {
+  margin-bottom: 150px;
+}
+
+.header-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  transition: color 1s ease;
+  color: #494c4e;
+  display: inline-block;
+  padding-top: 14px;
+  padding-left: 18px;
+}
+
+.header-logo:hover {
+  transition: all 1s ease;
+  color: #d5ab06;
+  font-weight: 300;
+}
+
+.header-logo-border {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 55px;
+  width: 55px;
+  background: transparent;
+  border: 4px solid #494c4e;
+}
+
+.header-logo-border:hover {
+  transition: color 1s ease,
+              border 0.5s ease;
+  border: 4px solid #1b6d85;
+  -webkit-animation-name: Rotate;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-name: Rotate;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-name: Rotate;
+  -ms-animation-duration: .05s;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: ease-in-out;
+}
+
+
+@-webkit-keyframes Rotate
+{
+  from{-webkit-transform:rotate(0deg);}
+  to{-webkit-transform:rotate(90deg);}
+}
+@-moz-keyframes Rotate
+{
+  from{-moz-transform:rotate(0deg);}
+  to{-moz-transform:rotate(90deg);}
+}
+@-ms-keyframes Rotate
+{
+  from{-ms-transform:rotate(0deg);}
+  to{-ms-transform:rotate(90deg);}
+}
+
+.header-navbar {
+  display: inline-block;
+  float: right;
+  margin-top: 25px;
+}
+.header-navbar a.header-navbar-link {
+  color: rgba(73, 76, 78, 0.4);
+}
+.header-navbar a.header-navbar-link:hover {
+  color: #e9bb06;
+}
+
+
