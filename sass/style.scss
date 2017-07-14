@@ -386,58 +386,58 @@ p {
 	}
 }
 
-.js .to-animate {
-	opacity: 0;
-}
-
-
-// Animations
-
-// Template Components
-
-// Accordion
-.fh5co-accordion {
-	border-bottom: 1px solid $brand-lighter;
-	float: left;
-	width: 100%;
-
-	.fh5co-accordion-head {
-		position: relative;
-		.fh5co-accordion-toggle {
-			position: absolute;
-			top: 50%;
-			margin-top: -13px;
-			right: 0;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-			font-weight: 700;
-			font-size: 12px;
-		}
-		> h3 {
-			font-size: 18px;
-			font-family: $font-playfair;
-			font-style: italic;
-			color: $brand-black;
-			margin: 0;
-			padding: 1.5em .5em;
-			i {
-				padding-right: .5em;
-				color: #a1b0c5;
-				opacity: .5;
-				font-size: 1.5em;
-				margin-bottom: 0px;
-				float: left;
-			}
-		}
-	}
-	.fh5co-accordion-body {
-		display: none;
-		float: left;
-		width: 100%;
-		padding-left: 3.6em;
-	}
-	
-}
+//.js .to-animate {
+//	opacity: 0;
+//}
+//
+//
+//// Animations
+//
+//// Template Components
+//
+//// Accordion
+//.fh5co-accordion {
+//	border-bottom: 1px solid $brand-lighter;
+//	float: left;
+//	width: 100%;
+//
+//	.fh5co-accordion-head {
+//		position: relative;
+//		.fh5co-accordion-toggle {
+//			position: absolute;
+//			top: 50%;
+//			margin-top: -13px;
+//			right: 0;
+//			text-transform: uppercase;
+//			letter-spacing: 2px;
+//			font-weight: 700;
+//			font-size: 12px;
+//		}
+//		> h3 {
+//			font-size: 18px;
+//			font-family: $font-playfair;
+//			font-style: italic;
+//			color: $brand-black;
+//			margin: 0;
+//			padding: 1.5em .5em;
+//			i {
+//				padding-right: .5em;
+//				color: #a1b0c5;
+//				opacity: .5;
+//				font-size: 1.5em;
+//				margin-bottom: 0px;
+//				float: left;
+//			}
+//		}
+//	}
+//	.fh5co-accordion-body {
+//		display: none;
+//		float: left;
+//		width: 100%;
+//		padding-left: 3.6em;
+//	}
+//
+//}
 
 // Counter
 .fh5co-counter {
