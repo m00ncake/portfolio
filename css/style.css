@@ -7357,11 +7357,16 @@ p {
   color: #88929a;
   background: #f9f6f0;
 }
-
+/******************************/
+/*********** Header ***********/
+/******************************/
 #fh5co-header {
   position: relative;
   z-index: 1;
   background-attachment: fixed;
+  background-size: 96.5%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #fh5co-header .fh5co-overlay {
   position: absolute;
@@ -7371,12 +7376,12 @@ p {
   bottom: 0;
   width: 100%;
   z-index: 2;
-  background: white;
+  /*background: white;*/
 }
 
 #fh5co-header,
 .fh5co-intro-wrap {
-  height: 700px;
+  height: 850px;
 }
 
 .fh5co-intro-wrap {
@@ -7388,11 +7393,11 @@ p {
   z-index: 3;
   width: 100%;
   display: table-cell;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   color: #fff;
 }
 .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
-  color: #494c4e;
+  color: #383b3d;
   line-height: 93px;
   font-size: 72px;
   font-weight: 100 !important;
@@ -7667,6 +7672,10 @@ p {
     width: 100%;
 
   }
+  .header {
+    margin-top: 30px;
+    margin-bottom: 130px;
+  }
   .header-logo {
     margin: 10px;
   }
@@ -7770,10 +7779,23 @@ p {
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
 }
-
-/***** Header Navbar ******/
+/******************************************/
+/******** Header Logo & Navbar ************/
+/******************************************/
 .header {
-  margin-bottom: 150px;
+  margin-top: 50px;
+  margin-bottom: 178px;
+}
+/*************** Logo *****************/
+.header-logo-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 59px;
+  width: 60px;
+  background: transparent;
+  border: 2px solid white;
 }
 
 .header-logo {
@@ -7781,31 +7803,30 @@ p {
   top: 0;
   left: 0;
   background: transparent;
-  transition: color 1s ease;
-  color: #494c4e;
+  transition: color 0.7s ease;
+  font-weight: 400;
+  color: ghostwhite;
+  /*color: #494c4e;*/
   display: inline-block;
   padding-top: 14px;
   padding-left: 18px;
 }
-
-.header-logo:hover {
+.header-logo-container:hover .header-logo {
   transition: all 1s ease;
-  color: #d5ab06;
-  font-weight: 300;
+  color: #d9cf1a;
+  font-weight: 500;
 }
-
 .header-logo-border {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 1px;
   height: 55px;
   width: 55px;
   background: transparent;
   border: 4px solid #494c4e;
 }
-
-.header-logo-border:hover {
+.header-logo-container:hover .header-logo-border {
   transition: color 1s ease,
               border 0.5s ease;
   border: 4px solid #1b6d85;
@@ -7822,8 +7843,6 @@ p {
   -ms-animation-iteration-count: 1;
   -ms-animation-timing-function: ease-in-out;
 }
-
-
 @-webkit-keyframes Rotate
 {
   from{-webkit-transform:rotate(0deg);}
@@ -7839,14 +7858,22 @@ p {
   from{-ms-transform:rotate(0deg);}
   to{-ms-transform:rotate(90deg);}
 }
-
+/**************** Nav Bar *******************/
 .header-navbar {
   display: inline-block;
   float: right;
-  margin-top: 25px;
+  margin: 3px;
+  padding: 6px;
+  background-color: white;
+}
+.header-navbar-container {
+  padding: 7px;
+  border: 1px solid #494c4e;
 }
 .header-navbar a.header-navbar-link {
-  color: rgba(73, 76, 78, 0.4);
+  padding: 0 9px;
+  color: #494c4e;
+  /*color: rgba(73, 76, 78, 0.4);*/
 }
 .header-navbar a.header-navbar-link:hover {
   color: #e9bb06;
