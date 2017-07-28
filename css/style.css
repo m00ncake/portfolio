@@ -7357,6 +7357,7 @@ p {
   color: #88929a;
   background: #f9f6f0;
 }
+
 /******************************/
 /*********** Header ***********/
 /******************************/
@@ -7364,9 +7365,9 @@ p {
   position: relative;
   z-index: 1;
   background-attachment: fixed;
-  background-size: 96.5%;
+  background-size: 98%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 2vw 2vw !important;
 }
 #fh5co-header .fh5co-overlay {
   position: absolute;
@@ -7406,12 +7407,6 @@ p {
   letter-spacing: 5px;
   margin: 0;
 }
-@media screen and (max-width: 768px) {
-  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
-    font-size: 42px;
-    line-height: 63px;
-  }
-}
 .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
   color: #494c4e;
   font-size: 30px;
@@ -7420,12 +7415,6 @@ p {
   font-family: Helvetica, "Sanchez", times, serif;
   line-height: 51px;
   margin: 0 0 2.5em 0;
-}
-@media screen and (max-width: 768px) {
-  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
-    font-size: 21px;
-    line-height: 41px;
-  }
 }
 .fh5co-intro-wrap .fh5co-intro a {
   color: rgba(73, 76, 78, 0.64);
@@ -7473,11 +7462,6 @@ p {
   position: absolute;
   background: #e9bb06;
 }
-@media screen and (max-width: 992px) {
-  .fh5co-section-heading .fh5co-border {
-    background: transparent !important;
-  }
-}
 
 .fh5co-section-seperator {
   background-color: transparent;
@@ -7485,11 +7469,6 @@ p {
   background-attachment: fixed;
   position: relative;
   padding: 2em 0;
-}
-@media screen and (max-width: 992px) {
-  .fh5co-section-seperator {
-    padding: 7em 0 !important;
-  }
 }
 .fh5co-section-seperator .fh5co-overlay {
   position: absolute;
@@ -7503,11 +7482,6 @@ p {
   height: 500px;
   width: 100%;
 }
-@media screen and (max-width: 992px) {
-  .fh5co-section-seperator, .fh5co-section-seperator .fh5co-section-content-wrap {
-    height: inherit;
-  }
-}
 .fh5co-section-seperator .fh5co-section-content-wrap {
   display: table;
 }
@@ -7518,11 +7492,6 @@ p {
 }
 .fh5co-section-seperator.fh5co-section-seperator-white {
   padding: 2em 0;
-}
-@media screen and (max-width: 992px) {
-  .fh5co-section-seperator.fh5co-section-seperator-white {
-    padding: 7em 0 !important;
-  }
 }
 .fh5co-section-seperator.fh5co-section-seperator-white .fh5co-overlay {
   background: transparent;
@@ -7603,7 +7572,6 @@ p {
   outline: none;
   box-shadow: none;
 }
-
 .btn {
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -7612,7 +7580,6 @@ p {
 .btn:hover, .btn:active, .btn:focus {
   outline: none;
 }
-
 .fh5co-testimony blockquote {
   border-left: none;
   padding-left: none;
@@ -7658,36 +7625,245 @@ p {
 #message {
   height: 130px;
 }
+
+/*****************************************************/
+/******************* Media Query *********************/
+/*****************************************************/
+@media screen and (max-width: 1920px) {
+  #fh5co-header {
+    background-size: 97.6%;
+  }
+  #fh5co-header, .fh5co-intro-wrap {
+    height: 49vw;
+  }
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
+    font-size: 3vmin;
+    margin-bottom: 1.5em;
+  }
+
+}
+
+@media screen and (max-width: 1680px) {
+  #fh5co-header {
+    background-size: 96.8%;
+  }
+  #fh5co-header, .fh5co-intro-wrap {
+    height: 55vw;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #fh5co-header {
+    background-size: 96.2%;
+  }
+  #fh5co-header, .fh5co-intro-wrap {
+    height: 60vw;
+  }
+  /****************** Navbar *********************/
+  .header.row.nav.navbar {
+    margin-bottom: 11vw;
+  }
+  .header-navbar .header-navbar-container a.header-navbar-link {
+    padding: 0 3px;
+  }
+  /**************** John Tyler Moon ******************/
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
+    font-size: 6vmin;
+    line-height: 7vw;
+  }
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
+    font-size: 2.5vmin;
+    margin-bottom: 3em;
+  }
+}
+@media screen and (max-width: 992px) {
+  #fh5co-header {
+    background-size: 95.6%;
+    background-position: 2vw 2vw;
+  }
+  .fh5co-section-seperator, .fh5co-section-seperator .fh5co-section-content-wrap {
+    height: inherit;
+  }
+  .fh5co-section-heading .fh5co-border {
+    background: transparent !important;
+  }
+  .fh5co-section-seperator {
+    padding: 7em 0 !important;
+  }
+  .fh5co-section-seperator.fh5co-section-seperator-white {
+    padding: 7em 0 !important;
+  }
+  /****************** Navbar *********************/
+  .header.row.nav.navbar {
+    margin-bottom: 11vw;
+  }
+  .header-navbar .header-navbar-container a.header-navbar-link {
+    padding: 0 3px;
+  }
+  /**************** John Tyler Moon ******************/
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
+    font-size: 5vmin;
+    line-height: 7vw;
+  }
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
+    font-size: 2.5vmin;
+    margin-bottom: 3em;
+  }
+
+}
+
 @media screen and (max-width: 768px) {
   #message {
     height: inherit;
   }
+  /********************* Navbar **********************/
+  .header .header-logo-container {
+    left: 16px;
+    height: 50px;
+    width: 50px;
+  }
+  .header .header-logo-container .header-logo-border {
+    height: 46px;
+    width: 45px;
+  }
+  .header .header-logo-container .header-logo {
+    font-weight: 300;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 0.8em;
+  }
+  .header .header-navbar {
+    margin-right: 5vw;
+    padding: 4px;
+    font-size: 0.9em;
+  }
+  .header .header-navbar .header-navbar-container {
+    padding: 4px;
+  }
+
+  /**************** John Tyler Moon ******************/
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
+    font-size: 4.5vmin;
+    line-height: 6vw;
+  }
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
+    font-size: 2.5vmin;
+    line-height: 5vw;
+    margin-bottom: 2.5em;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  #fh5co-header {
+    background-position: 9px 242px !important;
+    background-size: 180.6% !important;
+  }
+  #fh5co-header, .fh5co-intro-wrap {
+    height: 128vw;
+  }
+  .col-xs-6 {
+    width: 75%;
+  }
+  .col-xs-offset-6 {
+    margin-left: 14%;
+  }
+  .header.row.nav.navbar {
+    margin-bottom: 3vw;
+  }
+  .header .header-navbar {
+    margin-right: 5vw;
+    padding: 4px;
+    font-size: 0.9em;
+  }
+  .header .header-navbar .header-navbar-container {
+    padding: 4px;
+  }
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
+    margin-bottom: 1.0em;
+  }
+  .fh5co-social a {
+    font-size: 33px;
+  }
 }
 
 @media screen and (max-width: 480px) {
-  .col-xxs-12 {
-    float: none !important;
-    display: block;
-    clear: both;
-    width: 100%;
-
+  #fh5co-header {
+    background-position: 9px 225px !important;
+    background-size: 180.6% !important;
   }
-  .header {
-    margin-top: 30px;
-    margin-bottom: 130px;
+  #fh5co-header, .fh5co-intro-wrap {
+    height: 163vw;
   }
-  .header-logo {
-    margin: 10px;
+  .col-xs-6 {
+    width: 81%;
   }
-  .header-logo-border {
-    margin: 10px;
+  .col-xs-offset-6 {
+    margin-left: 14%;
+  }
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
+    font-size: 5vmin;
+    line-height:8vw;
+  }
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
+    font-size: 3vmin;
+    line-height: 6vw;
+  }
+  /****************** Icon Links *******************/
+  .fh5co-social a {
+    font-size: 33px;
+  }
+  .fh5co-intro-wrap .fh5co-intro a {
+    margin: 0px 4px;
+  }
+  /**************** Logo & Navbar ******************/
+  .header .header-logo-container {
+    left: 3px;
+    height: 50px;
+    width: 50px;
+  }
+  .header .header-logo-container .header-logo-border {
+    height: 46px;
     width: 45px;
   }
-
-  .fh5co-intro-lead.animate-1.to-animate {
-    font-size: 32px;
+  .header .header-logo-container .header-logo {
+    font-weight: 300;
+    padding-top: 10px;
+    padding-left: 15px;
+    font-size: 0.8em;
   }
+  .header .header-navbar {
+    margin-top: 1.1vw;
+    margin-right: 1vw;
+    padding: 3px;
+    font-size: 0.7em;
+  }
+  .header .header-navbar .header-navbar-container {
+    padding: 4px;
+  }
+
+  /*.col-xxs-12 {*/
+    /*float: none !important;*/
+    /*display: block;*/
+    /*clear: both;*/
+    /*width: 100%;*/
+  /*}*/
+  /*.header {*/
+    /*margin-top: 30px;*/
+    /*margin-bottom: 130px;*/
+  /*}*/
+  /*.header-logo {*/
+    /*margin: 10px;*/
+  /*}*/
+  /*.header-logo-border {*/
+    /*margin: 10px;*/
+    /*width: 45px;*/
+  /*}*/
+  /*.fh5co-intro-lead.animate-1.to-animate {*/
+    /*font-size: 32px;*/
+  /*}*/
 }
+
+
 #fh5co-footer p {
   margin: 0;
 }
@@ -7783,8 +7959,8 @@ p {
 /******** Header Logo & Navbar ************/
 /******************************************/
 .header {
-  margin-top: 50px;
-  margin-bottom: 178px;
+  margin-top: 3vw;
+  margin-bottom: 13vw;
 }
 /*************** Logo *****************/
 .header-logo-container {
@@ -7805,8 +7981,8 @@ p {
   background: transparent;
   transition: color 0.7s ease;
   font-weight: 400;
-  color: ghostwhite;
-  /*color: #494c4e;*/
+  /*color: ghostwhite;*/
+  color: #494c4e;
   display: inline-block;
   padding-top: 14px;
   padding-left: 18px;
@@ -7823,7 +7999,8 @@ p {
   left: 1px;
   height: 55px;
   width: 55px;
-  background: transparent;
+  /*background: transparent;*/
+  background-color: ghostwhite;
   border: 4px solid #494c4e;
 }
 .header-logo-container:hover .header-logo-border {
