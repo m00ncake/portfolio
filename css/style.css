@@ -7365,9 +7365,9 @@ p {
   position: relative;
   z-index: 1;
   background-attachment: fixed;
-  background-size: 98%;
+  background-size: 97%;
   background-repeat: no-repeat;
-  background-position: 2vw 2vw !important;
+  background-position: 1.5vw 1.5vw !important;
 }
 #fh5co-header .fh5co-overlay {
   position: absolute;
@@ -7645,7 +7645,7 @@ p {
 
 @media screen and (max-width: 1680px) {
   #fh5co-header {
-    background-size: 96.8%;
+    background-size: 96.9%;
   }
   #fh5co-header, .fh5co-intro-wrap {
     height: 55vw;
@@ -7653,9 +7653,6 @@ p {
 }
 
 @media screen and (max-width: 1200px) {
-  #fh5co-header {
-    background-size: 96.2%;
-  }
   #fh5co-header, .fh5co-intro-wrap {
     height: 60vw;
   }
@@ -7677,10 +7674,6 @@ p {
   }
 }
 @media screen and (max-width: 992px) {
-  #fh5co-header {
-    background-size: 95.6%;
-    background-position: 2vw 2vw;
-  }
   .fh5co-section-seperator, .fh5co-section-seperator .fh5co-section-content-wrap {
     height: inherit;
   }
@@ -7813,7 +7806,7 @@ p {
     font-size: 33px;
   }
   .fh5co-intro-wrap .fh5co-intro a {
-    margin: 0px 4px;
+    margin: 0 4px;
   }
   /**************** Logo & Navbar ******************/
   .header .header-logo-container {
