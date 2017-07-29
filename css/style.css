@@ -7467,8 +7467,12 @@ p {
   background-color: transparent;
   background-size: cover;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   position: relative;
   padding: 2em 0;
+}
+.fh5co-section-seperator:last-child {
+  background-repeat: inherit;
 }
 .fh5co-section-seperator .fh5co-overlay {
   position: absolute;
@@ -7834,12 +7838,12 @@ p {
     padding: 4px;
   }
 
-  /*.col-xxs-12 {*/
-    /*float: none !important;*/
-    /*display: block;*/
-    /*clear: both;*/
-    /*width: 100%;*/
-  /*}*/
+  .col-xxs-12 {
+    float: none !important;
+    display: block;
+    clear: both;
+    width: 100%;
+  }
   /*.header {*/
     /*margin-top: 30px;*/
     /*margin-bottom: 130px;*/
@@ -7850,7 +7854,7 @@ p {
   /*.header-logo-border {*/
     /*margin: 10px;*/
     /*width: 45px;*/
-  /*}*/
+  /*!*}*!*/
   /*.fh5co-intro-lead.animate-1.to-animate {*/
     /*font-size: 32px;*/
   /*}*/
