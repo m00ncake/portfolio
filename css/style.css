@@ -7813,6 +7813,10 @@ p {
   .fh5co-social a {
     font-size: 33px;
   }
+  .fh5co-social a:first-child {
+  top: 2px;
+  font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -7839,11 +7843,11 @@ p {
     line-height: 6vw;
   }
   /****************** Icon Links *******************/
-  .fh5co-social a {
-    font-size: 33px;
-  }
   .fh5co-intro-wrap .fh5co-intro a {
     margin: 0 4px;
+  }
+  .fh5co-social a {
+    font-size: 33px;
   }
   /**************** Logo & Navbar ******************/
   .header .header-logo-container {
