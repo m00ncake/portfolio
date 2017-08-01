@@ -2175,6 +2175,8 @@ pre code {
 }
 
 .col-xs-offset-6 {
+  z-index: -1;
+  margin-top: 20vw;
   margin-left: 50%;
 }
 
@@ -7361,7 +7363,7 @@ p {
 /******************************/
 /*********** Header ***********/
 /******************************/
-#fh5co-header {
+#johntylermoon {
   position: relative;
   z-index: 1;
   background-attachment: fixed;
@@ -7369,7 +7371,7 @@ p {
   background-repeat: no-repeat;
   background-position: 1.5vw 1.5vw !important;
 }
-#fh5co-header .fh5co-overlay {
+#johntylermoon .fh5co-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -7380,7 +7382,7 @@ p {
   /*background: white;*/
 }
 
-#fh5co-header,
+#johntylermoon,
 .fh5co-intro-wrap {
   height: 850px;
 }
@@ -7634,30 +7636,47 @@ p {
 /******************* Media Query *********************/
 /*****************************************************/
 @media screen and (max-width: 1920px) {
-  #fh5co-header {
-    background-size: 97.6%;
+  #johntylermoon {
+    background-size: 97%;
   }
-  #fh5co-header, .fh5co-intro-wrap {
-    height: 49vw;
+  #johntylermoon, .fh5co-intro-wrap {
+    height: 48vw;
   }
   .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
     font-size: 3vmin;
     margin-bottom: 1.5em;
   }
-
+  .col-xs-offset-6 {
+    left: 5vw;
+  }
+  #about, #portfolio, #skills, #contact {
+    margin-bottom: 80px;
+  } 
 }
 
 @media screen and (max-width: 1680px) {
-  #fh5co-header {
+  #johntylermoon {
     background-size: 96.9%;
   }
-  #fh5co-header, .fh5co-intro-wrap {
-    height: 55vw;
+  #johntylermoon, .fh5co-intro-wrap {
+    height: 54vw;
+  }
+  /**************** John Tyler Moon ******************/
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
+    font-size: 6vmin;
+    line-height: 5vw;
+  }
+  .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
+    font-size: 2.5vmin;
+    margin-bottom: 1em;
+  }
+   .col-xs-offset-6 {
+    left: 1vw;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  #fh5co-header, .fh5co-intro-wrap {
+  #johntylermoon, .fh5co-intro-wrap {
     height: 60vw;
   }
   /****************** Navbar *********************/
@@ -7675,6 +7694,9 @@ p {
   .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
     font-size: 2.5vmin;
     margin-bottom: 3em;
+  }
+  .col-xs-offset-6 {
+    left: 0vw;
   }
 }
 @media screen and (max-width: 992px) {
@@ -7715,7 +7737,7 @@ p {
   }
   /********************* Navbar **********************/
   .header .header-logo-container {
-    left: 16px;
+    /* left: 16px; */
     height: 50px;
     width: 50px;
   }
@@ -7730,13 +7752,16 @@ p {
     font-size: 0.8em;
   }
   .header .header-navbar {
-    margin-right: 5vw;
-    padding: 4px;
+    /* margin-right: 5vw; */
+    padding: 3px;
     font-size: 0.9em;
   }
   .header .header-navbar .header-navbar-container {
     padding: 4px;
   }
+  .header-navbar .header-navbar-container a.header-navbar-link {
+    padding: 0 1px;
+}
 
   /**************** John Tyler Moon ******************/
   .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
@@ -7751,17 +7776,18 @@ p {
 }
 
 @media screen and (max-width: 660px) {
-  #fh5co-header {
+  #johntylermoon {
     background-position: 9px 242px !important;
     background-size: 180.6% !important;
   }
-  #fh5co-header, .fh5co-intro-wrap {
+  #johntylermoon, .fh5co-intro-wrap {
     height: 128vw;
   }
   .col-xs-6 {
     width: 75%;
   }
   .col-xs-offset-6 {
+    margin-top: 14vw;
     margin-left: 14%;
   }
   .header.row.nav.navbar {
@@ -7784,18 +7810,19 @@ p {
 }
 
 @media screen and (max-width: 480px) {
-  #fh5co-header {
+  #johntylermoon {
     background-position: 9px 225px !important;
     background-size: 180.6% !important;
   }
-  #fh5co-header, .fh5co-intro-wrap {
+  #johntylermoon, .fh5co-intro-wrap {
     height: 163vw;
   }
   .col-xs-6 {
     width: 81%;
   }
   .col-xs-offset-6 {
-    margin-left: 14%;
+    margin-top: 18vw;
+    margin-left: 12%;
   }
   .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
     font-size: 5vmin;
@@ -7933,7 +7960,6 @@ p {
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
   -webkit-backface-visibility: hidden;
-  /* ideally, transition speed should match zoom duration */
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
@@ -7956,6 +7982,10 @@ p {
 /******** Header Logo & Navbar ************/
 /******************************************/
 .header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  margin: 0 4.5vw;
   margin-top: 3vw;
   margin-bottom: 13vw;
 }
@@ -8038,7 +8068,7 @@ p {
   float: right;
   margin: 3px;
   padding: 6px;
-  background-color: white;
+  background-color: rgba(245, 245, 245, 0.95);
 }
 .header-navbar-container {
   padding: 7px;
@@ -8052,5 +8082,7 @@ p {
 .header-navbar a.header-navbar-link:hover {
   color: #e9bb06;
 }
+
+
 
 

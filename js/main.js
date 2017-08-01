@@ -231,8 +231,8 @@
 	
 	// Waypoints 
 	var heroWayPoint = function() {
-		if ( $('#fh5co-header').length > 0 ) {
-			$('#fh5co-header').waypoint( function( direction ) {
+		if ( $('#johntylermoon').length > 0 ) {
+			$('#johntylermoon').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this).hasClass('animated') ) {
 					
