@@ -2175,7 +2175,7 @@ pre code {
 }
 
 .col-xs-offset-6 {
-  z-index: -1;
+  z-index: 0;
   margin-top: 20vw;
   margin-left: 50%;
 }
@@ -4749,7 +4749,7 @@ tbody.collapse.in {
 }
 
 .navbar-static-top {
-  z-index: 1000;
+  /* z-index: 1000; */
   border-width: 0 0 1px;
 }
 @media (min-width: 768px) {
@@ -4763,7 +4763,7 @@ tbody.collapse.in {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 1030;
+  /* z-index: 1030; */
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
@@ -7360,9 +7360,9 @@ p {
   background: #f9f6f0;
 }
 
-/******************************/
-/*********** Header ***********/
-/******************************/
+/************************************************/
+/******************* Header *********************/
+/************************************************/
 #johntylermoon {
   position: relative;
   z-index: 1;
@@ -7419,6 +7419,7 @@ p {
   margin: 0 0 2.5em 0;
 }
 .fh5co-intro-wrap .fh5co-intro a {
+  z-index: 0;
   color: rgba(73, 76, 78, 0.64);
   border-bottom: 1px solid rgba(255, 255, 255, 0.4);
   text-decoration: none;
@@ -7435,6 +7436,11 @@ p {
   display: inline-block;
   text-decoration: none;
   border-bottom: none !important;
+}
+.fh5co-social a:first-child {
+  top: 4px;
+  right: 2px;
+  font-size: 38px;
 }
 
 #fh5co-main {
@@ -7453,7 +7459,7 @@ p {
   font-weight: 400;
   padding-bottom: 10px;
   margin-bottom: 1.5em;
-  text-transform: uppercase;
+  text-transform: none;
   color: #000;
 }
 .fh5co-section-heading .fh5co-border {
@@ -8016,7 +8022,7 @@ p {
 }
 .header-logo-container:hover .header-logo {
   transition: all 1s ease;
-  color: #d9cf1a;
+  color: #e9bb06;
   font-weight: 500;
 }
 .header-logo-border {
@@ -8081,6 +8087,25 @@ p {
 }
 .header-navbar a.header-navbar-link:hover {
   color: #e9bb06;
+}
+.header.navbar {
+    z-index: 1;
+}
+
+/***********************************************/
+/***************** Tech Icons ******************/
+/***********************************************/
+.tech-icons-row {
+  text-align: center;
+}
+.tech-icon {
+  display: inline-block;  
+  font-size: 120px; 
+  color: pink;
+  margin: 10px 25px;
+}
+.tech-icon svg {
+  width: 120px;
 }
 
 
