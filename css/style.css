@@ -7874,12 +7874,17 @@ p {
   .header .header-navbar .header-navbar-container {
     padding: 4px;
   }
-
   .col-xxs-12 {
     float: none !important;
     display: block;
     clear: both;
     width: 100%;
+  }
+  .tech-icon {
+  display: inline-block;  
+  font-size: 120px; 
+  color: pink;
+  margin: 10px 20px;
   }
   /*.header {*/
     /*margin-top: 30px;*/
@@ -8037,7 +8042,7 @@ p {
   height: 55px;
   width: 55px;
   /*background: transparent;*/
-  background-color: ghostwhite;
+  background-color: rgba(245, 245, 245, 0.95);
   border: 4px solid #494c4e;
 }
 .header-logo-container:hover .header-logo-border {
