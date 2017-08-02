@@ -7880,10 +7880,7 @@ p {
     clear: both;
     width: 100%;
   }
-  .tech-icon {
-  display: inline-block;  
-  font-size: 120px; 
-  color: pink;
+  .tech-icons-row .tech-icon {
   margin: 10px 20px;
   }
   /*.header {*/
@@ -8110,7 +8107,6 @@ p {
 .tech-icon {
   display: inline-block;  
   font-size: 120px; 
-  color: pink;
   margin: 10px 25px;
 }
 .tech-icon svg {
