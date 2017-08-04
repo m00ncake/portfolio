@@ -7790,7 +7790,9 @@ p {
     height: 128vw;
   }
   .col-xs-6 {
+    float: none;
     width: 75%;
+    margin: 0 auto;
   }
   .col-xs-offset-6 {
     margin-top: 14vw;
