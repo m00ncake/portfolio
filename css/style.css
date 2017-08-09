@@ -7448,6 +7448,7 @@ p {
 }
 
 .row-padded {
+  text-align: center;
   padding: 7em 0;
 }
 
@@ -7681,7 +7682,7 @@ p {
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1280px) {
   #johntylermoon, .fh5co-intro-wrap {
     height: 60vw;
   }
@@ -7698,8 +7699,8 @@ p {
     line-height: 7vw;
   }
   .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
-    font-size: 2.5vmin;
-    margin-bottom: 3em;
+    font-size: 3vmin;
+    margin-bottom: 4em;
   }
   .col-xs-offset-6 {
     left: 0vw;
@@ -7707,7 +7708,7 @@ p {
 }
 @media screen and (max-width: 992px) {
   .fh5co-section-seperator, .fh5co-section-seperator .fh5co-section-content-wrap {
-    height: inherit;
+     height: inherit; 
   }
   .fh5co-section-heading .fh5co-border {
     background: transparent !important;
@@ -7738,6 +7739,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .fh5co-section-seperator, .fh5co-section-seperator .fh5co-section-content-wrap {
+     height: inherit; 
+  }
   #message {
     height: inherit;
   }
@@ -7822,6 +7826,9 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+  .fh5co-section-seperator, .fh5co-section-seperator .fh5co-section-content-wrap {
+     height: inherit; 
+  }
   #johntylermoon {
     background-position: 9px 225px !important;
     background-size: 180.6% !important;
@@ -7954,14 +7961,14 @@ p {
 .fh5co-counter {
   font-size: 50px;
   display: block;
-  color: #fff;
+  color: #e9bb06;
   width: 100%;
   font-family: "Sanchez", times, serif;
   margin-bottom: .5em;
 }
 
 .fh5co-counter-label {
-  color: #fff;
+  color: #e9bb06;
   text-transform: uppercase;
   font-size: 13px;
   font-family: "Montserrat", arial, sans-serif;
@@ -8115,6 +8122,25 @@ p {
   width: 120px;
 }
 
+/************************************************/
+/******************** Footer ********************/
+/************************************************/
+.footer-icon {
+  font-size: 50px;
+  padding-left: 15px;
+  color: rgba(73, 76, 78, 0.64);
+}
+.footer-icon.glyphicon-list-alt {
+  font-size: 43px;
+  top: 3px;
+}
+.footer-icon.glyphicon-list-alt:hover {
+  text-decoration: none;
+}
+.copyright {
+  padding-left: 17px;
+  color: rgba(73, 76, 78, 0.64);
+}
 
 
 
