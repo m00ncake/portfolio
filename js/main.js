@@ -387,5 +387,27 @@
 
 	});
 
+	// Tech icon 
+	$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.node, .to-animate.drupal, .to-animate.git, .to-animate.photo").hide();
+	
+	var showTechDescription = function(tech) {
+		$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.node, .to-animate.drupal, .to-animate.git, .to-animate.photo").hide();
+		$(".to-animate." + tech).show();
+	}
+
+	$(".tech-icon").hover(function(){
+		$(this).css({
+			"background-color":"rgba(211, 211, 211, 0.62)",
+			"cursor":"pointer"
+		}).show(showTechDescription($(this).attr("id")));
+		}, function(){
+		$(this).css("background-color", "white");
+	});
+
+	$(".tech-icons").on("click", ".tech-icon", function(){ 
+		console.log($(this).attr("id") + " click works");
+		$(this).css("")
+
+	});
 
 }());
