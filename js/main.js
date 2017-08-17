@@ -387,7 +387,7 @@
 
 	});
 
-	// Tech icon 
+	// Tech icon Description
 	$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.node, .to-animate.drupal, .to-animate.git, .to-animate.photo").hide();
 	
 	var showTechDescription = function(tech) {
@@ -409,5 +409,37 @@
 		$(this).css("")
 
 	});
+
+	// Get In Touch
+	var formName = $("#name");
+	var formEmail = $("#email");
+	var formSubject = $("#subject");
+	var formMessage = $("#message");
+
+	$(".contact-form").on("change", ".form-control",function() {
+		console.log($(this).val());
+	});
+	function sendMail(){
+		$.ajax({
+			url: '../php/mail_handler.php',
+			method: 'POST',
+			data: {
+				name: formName.val(),
+				email: formEmail.val(),
+				subject: formSubject.val(),
+				body: formMessage.val()
+			},
+			success: function() {
+				console.log("it worked!");
+			},
+			error: function() {
+				console.log("it FAILED!");
+			}
+		})
+	}
+	
+
+	$("#send").on("click", sendMail);
+
 
 }());
