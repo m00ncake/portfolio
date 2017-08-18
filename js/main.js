@@ -421,7 +421,7 @@
 	});
 	function sendMail(){
 		$.ajax({
-			url: '../php/mail_handler.php',
+			url: 'php/mail_handler.php',
 			method: 'POST',
 			data: {
 				name: formName.val(),
