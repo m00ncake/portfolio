@@ -393,7 +393,7 @@
 	var showTechDescription = function(tech) {
 		$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.node, .to-animate.drupal, .to-animate.git, .to-animate.photo").hide();
 		$(".to-animate." + tech).show();
-	}
+	};
 
 	$(".tech-icon").hover(function(){
 		$(this).css({
@@ -419,10 +419,41 @@
 	$(".contact-form").on("change", ".form-control",function() {
 		console.log($(this).val());
 	});
-	function sendMail(){
+
+	function validateEmail(mail) {
+		var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+		if (filter.test(mail)) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	};	
+
+
+	function sendMail(e){
+	
+		var email = $("#email").val();
+		if ($.trim(email).length == 0) {
+			$(".contact-form-left .form-group #error").css("color", "red").show();
+			// alert("Please enter valid email address");
+			return e.preventDefault();
+		}
+		if (validateEmail(email)) {
+			$(".contact-form-left .form-group p").hide();			
+			// alert("Email is valid");
+		}
+		else {
+			$(".contact-form-left .form-group #error").css("color", "red").show();			
+			// alert("Invalid Email Address");
+			return e.preventDefault();
+		}
+
+		clearForm();
+		
 		$.ajax({
-			url: 'php/mail_handler.php',
-			method: 'POST',
+			url: "php/mail_handler.php",
+			method: "POST",
 			data: {
 				name: formName.val(),
 				email: formEmail.val(),
@@ -436,10 +467,35 @@
 				console.log("it FAILED!");
 			}
 		})
-	}
-	
+	};
+
+	function clearForm() {
+		var msgSent = $("<p>", {
+			text: "Your Message has been sent to John already! Thank you!",
+			style: "color: white; font-weight: bold; font-size: 18px; padding-top: 30px"
+		});
+		console.log($(msgSent));
+		// $(msgSent).css("color", "white");
+		// 	"font-weight":"bold",
+		// 	"font-size":"18px",
+		// });
+		$(".contact-form").hide();
+		$(".contact-form-container").append(msgSent);
+		// $(".contact-form-container p").css({
+		// 	"color":"white",
+		// 	"font-weight":"bold",
+		// 	"font-size":"18px"
+		// });
+	};
+
+	function hideErrorMsg() {
+		$(".contact-form-left .form-group #error").hide();					
+	};
+
+	hideErrorMsg();	
 
 	$("#send").on("click", sendMail);
+	$("#email").on("keypress", hideErrorMsg);
 
 
 }());
