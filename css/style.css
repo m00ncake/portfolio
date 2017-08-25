@@ -7563,9 +7563,13 @@ p {
   z-index: 8;
   opacity: 0;
 }
+/************************/
+/** Portfolio on-hover **/
+/************************/
+
 .fh5co-project > a .fh5co-overlay-text {
   position: absolute;
-  top: 50%;
+  top: 35%;
   text-align: center;
   width: 100%;
   margin-top: -15px;
@@ -7574,6 +7578,18 @@ p {
   font-size: 20px;
   font-family: "Sanchez", times, serif;
   opacity: 0;
+}
+
+button.src-code-btn, button.site-btn {
+  color: white;
+  background-color: #1b6d85;
+  position: relative;
+  top: 55%;
+  width: 25%;
+  height: 20%;
+  border-width: 0px;
+  border-radius: 2px;
+  margin: 0 3px;
 }
 
 .form-control {
@@ -8129,13 +8145,16 @@ p {
 /************************************************/
 /******************** Footer ********************/
 /************************************************/
+.footer-icons {
+  padding-top: 15px;
+}
 .footer-icon {
-  font-size: 50px;
+  font-size: 40px;
   padding-left: 15px;
-  color: rgba(73, 76, 78, 0.64);
+  color: rgba(255, 255, 255, 0.87);
 }
 .footer-icon.glyphicon-list-alt {
-  font-size: 43px;
+  font-size: 34px;
   top: 3px;
 }
 .footer-icon.glyphicon-list-alt:hover, .footer-icon:hover {
@@ -8144,6 +8163,6 @@ p {
 }
 .copyright {
   padding-left: 17px;
-  padding-top: 10px;
-  color: rgba(73, 76, 78, 0.64);
+  padding-top: 0;
+  color: rgba(255, 255, 255, 0.87);
 }
