@@ -132,16 +132,16 @@
 						<div class="fh5co-section-content">
 							<div class="row">
 								<div class="col-md-4 text-center to-animate">
-									<span class="fh5co-counter js-counter" data-from="0" data-to="1392" data-speed="5000" data-refresh-interval="50"></span>
+									<span class="fh5co-counter js-counter" data-from="0" data-to="1712" data-speed="5000" data-refresh-interval="50"></span>
 									<span class="fh5co-counter-label">coffees consumed</span>
 									
 								</div>
 								<div class="col-md-4 text-center to-animate">
-									<span class="fh5co-counter js-counter" data-from="0" data-to="12" data-speed="5000" data-refresh-interval="50"></span>
+									<span class="fh5co-counter js-counter" data-from="0" data-to="5" data-speed="5000" data-refresh-interval="50"></span>
 									<span class="fh5co-counter-label">kids plays missed</span>
 								</div>
 								<div class="col-md-4 text-center to-animate">
-									<span class="fh5co-counter js-counter" data-from="0" data-to="4" data-speed="5000" data-refresh-interval="50"></span>
+									<span class="fh5co-counter js-counter" data-from="0" data-to="1" data-speed="5000" data-refresh-interval="50"></span>
 									<span class="fh5co-counter-label">anniversaries forgotten</span>
 								</div>
 							</div>
@@ -153,18 +153,41 @@
 			<div id="portfolio"></div>
 			<div class="container" id="projects-animate">
 				<div class="row row-padded">
-					<div class="col-md-3">
+					<div class="col-md-3 project-info-container">
 						<h2 class="fh5co-section-heading to-animate">Portfolio<span class="fh5co-border"></span></h2>
-						<p class="to-animate">Passion projects for my son and daughter. DayMakr helps me plan my day when 
+						<p class="to-animate project-summaries">Passion projects for my son and daughter. DayMakr helps me plan my day when 
 							we have nowhere to go. My kids loves Teen Titans Go, hence the Memory-match game. I jumped on 
 							the League of Boatwrights project because of my son's love for sailboats. And, Bookswopp was 
 							created as a request from my wife because our bookshelves were overflowing with children's books 
-							no longer read and orphaned by our kids.</p>
+							no longer read and orphaned by our kids.
+						</p>
+						<p class="to-animate project-info day"><b>DayMakr</b></br>
+							<i>A day planner that picks the top 3 places to eat and the top 3 activities to do in the city of your choice.</i></br></br>
+							● Pulls data from the Yelp, Google Maps & Weather API​ and displays content according to the user’s input.</br>
+							● Served as a front-end dev utilizing HTML 5​ / CSS 3​ to provide structure and style for the user</br>
+							● Implemented the weather API through AJAX​ calls
+						</p>
+						<p class="to-animate project-info card"><b>Memory Match</b></br>
+							<i>A Teen Titan themed card-matching game for children of all ages.</i></br></br>
+							● A card game with a responsive field that tracks a player’s accuracy, guesses, and statistics.</br>
+							● Utilized HTML to structure the basic game skeleton and used CSS & Bootstrap​ to style the aesthetic portion</br>
+							● Combined Javascript​ & jQuery​ to provide game logic, card randomization, animation states & sound effects.
+						</p>
+						<p class="to-animate project-info lob"><b>League of Boatwrights</b></br> 
+							<i>A website dedicated to small boat enthusiasts passionate about boat-building.</i></br></br>
+							● A site built with Drupal 8​ that provides resources on boats for boat-builders.</br>
+							● Created functionality that filters & sorts through the database and displays what was requested</br>
+							● Customized site with modules and built site structure by using content types, blocks & views.
+						</p>
+						<p class="to-animate project-info book"><b>Bookswopp​</b></br> (currently in progress)</br>
+							<i>An online book swapping community for parents with bookshelves filled with books their kids no longer have an interest in.</i></br></br>
+							● A web-app to be built with React.js​ & Node.js
+						</p>
 					</div>
 					<div class="col-md-8 col-md-push-1">
 						<div class="row portfolio-container">
-							<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate portfolio">
-								<a>
+							<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate portfolio" id="day">
+								<a class="project-img">
 									<div class="fh5co-overlay-text">DayMakr</div>
 									<div class="fh5co-overlay">
 										<button type="button" class="src-code-btn" onclick="window.open('https://github.com/m00ncake/C4.17_hackathon2')">.code</button>
@@ -173,8 +196,8 @@
 									<img src="images/project_daymakr.png" alt="DayMaker web application" class="img-responsive">
 								</a>
 							</div>
-							<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate portfolio" id="memory">
-								<a>
+							<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate portfolio" id="card">
+								<a class="project-img">
 									<div class="fh5co-overlay-text">Teen Titan Memory Match</div>
 									<div class="fh5co-overlay">
 										<button type="button" class="src-code-btn" onclick="window.open('https://github.com/m00ncake/memory-match/tree/master/docs')">.code</button>
@@ -183,8 +206,8 @@
 									<img src="images/project_memory-match.png" alt="Teen Titan Memory Match Game" class="img-responsive">
 								</a>
 							</div>
-							<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate portfolio">
-								<a>
+							<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate portfolio" id="lob">
+								<a class="project-img">
 									<div class="fh5co-overlay-text">League of Boatwrights</div>
 									<div class="fh5co-overlay">
 											<button type="button" class="site-btn" onclick="window.open('http://live-lob-playground.pantheonsite.io/')">.site</button>
@@ -192,8 +215,8 @@
 									<img src="images/project_league.of.boatwrights.png" alt="League of Boatwright site" class="img-responsive">
 								</a>
 							</div>
-							<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate portfolio">
-								<a href="https://m00ncake.github.io/bookswap/" target="_blank">
+							<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 fh5co-project to-animate portfolio" id="book">
+								<a class="project-img">
 									<div class="fh5co-overlay-text">Bookswopp <br/><small>(currently under construction)</small></div>
 									<div class="fh5co-overlay">
 											<button type="button" class="src-code-btn" onclick="window.open('https://github.com/m00ncake/bookswap')">.code</button>
@@ -307,17 +330,6 @@
 										</div>
 									</div>
 								</div>
-								<!--<div class="fh5co-accordion-wrap">
-									<div class="fh5co-accordion to-animate">
-										<div class="fh5co-accordion-head">
-											<a href="#" class="fh5co-accordion-toggle js-fh5co-accordion-toggle">Show More</a>
-											<h3><i class="devicon-html5-plain"></i>HTML 5</h3>
-										</div>
-										<div class="fh5co-accordion-body active">
-											<p>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and current version of the HTML standard.</p>
-										</div>	
-									</div>
-								</div> -->
 							</div>
 						</div>
 					</div>
@@ -345,45 +357,13 @@
 										<li class="to-animate"><a href="mailto:johntylermoon@gmail.com"><i class="icon-email"></i>johntylermoon@gmail.com</a></li>
 										<!-- <li class="to-animate"><i class="icon-globe"></i> <a href="http://johntylermoon.com" target="_blank">www.johntylermoon.com</a></li> -->
 									</ul>
-										<p class="to-animate footer-icons">
-											<a href="john.moon-resume.pdf" class="to-animate footer-icon glyphicon glyphicon-list-alt" target="_blank"></a>
-											<a href="https://github.com/m00ncake" class="to-animate footer-icon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-											<a href="https://www.linkedin.com/in/john-moon-aa280b131/" class="to-animate footer-icon" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-										</p>
-										<p class="to-animate copyright">&copy; 2017 john.tyler.moon</p>
+									<p class="to-animate footer-icons">
+										<a href="john.moon-resume.pdf" class="to-animate footer-icon glyphicon glyphicon-list-alt" target="_blank"></a>
+										<a href="https://github.com/m00ncake" class="to-animate footer-icon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+										<a href="https://www.linkedin.com/in/john-moon-aa280b131/" class="to-animate footer-icon" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+									</p>
+									<p class="to-animate copyright">&copy; 2017 john.tyler.moon</p>
 								</div>
-							
-								<!-- Contact Form -->
-								<!-- <div class="col-md-8 col-md-push-1 contact-form-container">
-									<div class="row contact-form">
-										<div class="col-md-6 contact-form-left">
-											<div class="form-group to-animate">
-												<label for="name" class="sr-only">Name</label>
-												<input type="text" id="name" class="form-control" placeholder="Name">
-											</div>
-											<div class="form-group to-animate">
-												<label for="email" class="sr-only">Email</label>
-												<input type="email" id="email" class="form-control" placeholder="Email">
-												<p id="error">Please enter a vaild email address</p>
-											</div>
-											<div class="form-group to-animate">
-												<label for="phone" class="sr-only">Subject</label>
-												<input type="text" id="subject" class="form-control" placeholder="Subject">
-											</div>
-										</div>
-										<div class="col-md-6">
-											<div class="form-group to-animate">
-												<label for="message" class="sr-only">Message</label>
-												<textarea name="" id="message" cols="30" rows="5" class="form-control" placeholder="Message"></textarea>
-											</div>
-											<div class="form-group to-animate">
-												<input type="submit" class="btn btn-primary btn-block" id="send" value="Send Message">
-											</div>
-										</div>
-
-									</div>
-								</div> -->
-
 							</div>
 						</div>
 					</div>
@@ -392,22 +372,8 @@
 			<!-- END .container -->
 
 		</main>
+		<!-- END .container -->
 
-		<!-- <footer role="contentinfo" id="fh5co-footer">
-			<div class="container" id="footer-animate">
-				<div class="row row-padded">
-					<div class="col-md-8 col-md-push-4">
-						<p class="to-animate">
-							<a href="john.moon-resume.pdf" class="to-animate footer-icon glyphicon glyphicon-list-alt" target="_blank"></a>
-							<a href="https://github.com/m00ncake" class="to-animate footer-icon" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-							<a href="https://www.linkedin.com/in/john-moon-aa280b131/" class="to-animate footer-icon" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-						</p>
-						<p class="to-animate copyright">&copy; 2017 john.tyler.moon</p>
-					</div>
-				</div>
-			</div>
-			<!-- END .container -->
-		</footer> -->
 
 		<!-- jQuery -->
 		<script src="js/jquery.min.js"></script>
