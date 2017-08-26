@@ -7417,6 +7417,7 @@ p {
   font-family: Helvetica, "Sanchez", times, serif;
   line-height: 51px;
   margin: 0 0 2.5em 0;
+  text-shadow: 2px 2px 2px white;
 }
 .fh5co-intro-wrap .fh5co-intro a {
   z-index: 0;
@@ -7582,7 +7583,7 @@ p {
 
 button.src-code-btn, button.site-btn {
   color: white;
-  background-color: #1b6d85;
+  background-color: rgba(27, 109, 133, 0.85);
   position: relative;
   top: 55%;
   width: 25%;
@@ -7590,6 +7591,11 @@ button.src-code-btn, button.site-btn {
   border-width: 0px;
   border-radius: 2px;
   margin: 0 3px;
+}
+
+button.src-code-btn:hover, button.site-btn:hover {
+  color: #1b6d85;
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .form-control {
@@ -7988,7 +7994,7 @@ button.src-code-btn, button.site-btn {
 
 .fh5co-counter-label {
   color: white;
-  text-shadow: 1px 1px 2px gray;
+  text-shadow: 2px 2px 1px gray;
   text-transform: uppercase;
   font-size: 13px;
   font-family: "Montserrat", arial, sans-serif;

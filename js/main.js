@@ -384,18 +384,27 @@
 		servicesWayPoint();
 		contactWayPoint();
 		footerWayPoint();
-
 	});
 
-	//Portfolio
+	//Project Description
+	$(".project-info").hide();
 
-	// $("#memory").hover(function(){
-	// 	console.log("img hovered");
-	// 	var btn = $("<button>", {
-	// 		text: "Source Code"
-	// 	})
-	// 	$("#memory a div.fh5co-overlay").append(btn);
-	// });
+	var showProjectInfo = function(proj) {
+		$(".project-info").hide();
+		$(".project-info." + proj).show();
+	};
+
+	$(".portfolio-container").on("mouseenter",".portfolio",function(){
+		$(".project-summaries").hide();
+		console.log("hover works");
+		$(this).show(showProjectInfo($(this).attr("id")));
+	});
+
+	$(".project-img").mouseleave(function(){
+		$(".project-info").hide();
+		$(".project-summaries").show();
+	});
+
 
 	// Tech icon Description
 	$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.node, .to-animate.drupal, .to-animate.git, .to-animate.photo").hide();
@@ -419,93 +428,5 @@
 		$(this).css("")
 
 	});
-
-	// Get In Touch
-	var formName = $("#name");
-	var formEmail = $("#email");
-	var formSubject = $("#subject");
-	var formMessage = $("#message");
-
-	$(".contact-form").on("change", ".form-control",function() {
-		console.log($(this).val());
-	});
-
-	function validateEmail(mail) {
-		var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-		if (filter.test(mail)) {
-			return true;
-		}
-		else {
-			return false;
-		}
-	};	
-
-
-	function sendMail(e){
-	
-		var email = $("#email").val();
-		if ($.trim(email).length == 0) {
-			$(".contact-form-left .form-group #error").css("color", "red").show();
-			// alert("Please enter valid email address");
-			return e.preventDefault();
-		}
-		if (validateEmail(email)) {
-			$(".contact-form-left .form-group p").hide();			
-			// alert("Email is valid");
-		}
-		else {
-			$(".contact-form-left .form-group #error").css("color", "red").show();			
-			// alert("Invalid Email Address");
-			return e.preventDefault();
-		}
-
-		clearForm();
-		
-		$.ajax({
-			url: "php/mail_handler.php",
-			method: "POST",
-			data: {
-				name: formName.val(),
-				email: formEmail.val(),
-				subject: formSubject.val(),
-				body: formMessage.val()
-			},
-			success: function() {
-				console.log("it worked!");
-			},
-			error: function() {
-				console.log("it FAILED!");
-			}
-		})
-	};
-
-	function clearForm() {
-		var msgSent = $("<p>", {
-			text: "Your Message has been sent to John already! Thank you!",
-			style: "color: white; font-weight: bold; font-size: 18px; padding-top: 30px"
-		});
-		console.log($(msgSent));
-		// $(msgSent).css("color", "white");
-		// 	"font-weight":"bold",
-		// 	"font-size":"18px",
-		// });
-		$(".contact-form").hide();
-		$(".contact-form-container").append(msgSent);
-		// $(".contact-form-container p").css({
-		// 	"color":"white",
-		// 	"font-weight":"bold",
-		// 	"font-size":"18px"
-		// });
-	};
-
-	function hideErrorMsg() {
-		$(".contact-form-left .form-group #error").hide();					
-	};
-
-	hideErrorMsg();	
-
-	$("#send").on("click", sendMail);
-	$("#email").on("keypress", hideErrorMsg);
-
 
 }());
