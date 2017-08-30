@@ -7805,6 +7805,10 @@ button.src-code-btn:hover, button.site-btn:hover {
     line-height: 5vw;
     margin-bottom: 2.5em;
   }
+  /*************** Project Info Height ***************/
+  .col-md-3.project-info-container {
+    height: 45vw;
+  }
 }
 
 @media screen and (max-width: 660px) {
@@ -7844,6 +7848,10 @@ button.src-code-btn:hover, button.site-btn:hover {
   .fh5co-social a:first-child {
   top: 2px;
   font-size: 28px;
+  }
+  /*************** Project Info Height ***************/
+  .col-md-3.project-info-container {
+    height: 55vw;
   }
 }
 
@@ -7913,6 +7921,10 @@ button.src-code-btn:hover, button.site-btn:hover {
   }
   .tech-icons-row .tech-icon {
   margin: 10px 20px;
+  }
+  /*************** Project Info Height ***************/
+  .col-md-3.project-info-container {
+    height: 75vw;
   }
   /*.header {*/
     /*margin-top: 30px;*/
