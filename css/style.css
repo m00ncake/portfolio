@@ -7683,7 +7683,7 @@ button.src-code-btn:hover, button.site-btn:hover {
   .col-xs-offset-6 {
     left: 5vw;
   }
-  #about, #portfolio, #skills, #contact {
+  #portfolio, #skills, #about, #contact {
     margin-bottom: 80px;
   } 
 }
