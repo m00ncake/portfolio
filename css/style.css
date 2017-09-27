@@ -7622,13 +7622,15 @@ button.src-code-btn:hover, button.site-btn:hover {
 .fh5co-testimony blockquote > p {
   font-size: 30px;
   line-height: 41px;
-  color: #314e63;
-  font-family: "Sanchez", times, serif;
+  color: white;
+  padding: 1vw 5vw;
+  font-family: "Helvetica Neue", Monaco, Arial, sans-serif;
+  font-weight: 300;
+  background-color: rgba(0, 0, 0, 0.53);
 }
-.fh5co-testimony blockquote > p em {
-  font-family: "Playfair Display", times, serif;
-  font-style: italic;
-  font-weight: 400;
+.fh5co-testimony blockquote > p span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
 }
 .fh5co-testimony blockquote > p .author {
   font-size: 18px;
@@ -7636,6 +7638,7 @@ button.src-code-btn:hover, button.site-btn:hover {
   font-style: normal;
   display: block;
   font-weight: 400;
+  text-shadow: 1px 1px #9B9A9A;
   color: rgba(255, 255, 255, 0.5);
 }
 
