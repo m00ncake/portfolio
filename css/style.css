@@ -7557,12 +7557,14 @@ p {
 .fh5co-project > a .fh5co-overlay {
   position: absolute;
   left: 0;
-  right: 0;
-  bottom: 0;
+  /* right: 0;
+  bottom: 0; */
   top: 0;
   background: rgba(237, 194, 31, 0.9);
   z-index: 8;
   opacity: 0;
+  width: 100%;
+  height: 100%;
 }
 /************************/
 /** Portfolio on-hover **/
@@ -7667,7 +7669,7 @@ button.src-code-btn:hover, button.site-btn:hover {
 /*****************************************************/
 /******************* Media Query *********************/
 /*****************************************************/
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 2220px) {
   #johntylermoon {
     background-size: 97%;
   }
@@ -7929,20 +7931,6 @@ button.src-code-btn:hover, button.site-btn:hover {
   .col-md-3.project-info-container {
     height: 75vw;
   }
-  /*.header {*/
-    /*margin-top: 30px;*/
-    /*margin-bottom: 130px;*/
-  /*}*/
-  /*.header-logo {*/
-    /*margin: 10px;*/
-  /*}*/
-  /*.header-logo-border {*/
-    /*margin: 10px;*/
-    /*width: 45px;*/
-  /*!*}*!*/
-  /*.fh5co-intro-lead.animate-1.to-animate {*/
-    /*font-size: 32px;*/
-  /*}*/
 }
 
 
