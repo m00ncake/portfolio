@@ -7417,7 +7417,7 @@ p {
 .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
   color: #494c4e;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 300;
   /* font-family: "Roboto", arial, sans-serif;
   font-family: Helvetica, "Sanchez", times, serif; */
   font-family: 'Lato', sans-serif;  
@@ -7717,7 +7717,7 @@ button.src-code-btn:hover, button.site-btn:hover {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1286px) {
   #johntylermoon, .fh5co-intro-wrap {
     height: 60vw;
   }
@@ -7731,7 +7731,7 @@ button.src-code-btn:hover, button.site-btn:hover {
   /**************** John Tyler Moon ******************/
   .fh5co-intro-wrap .fh5co-intro .fh5co-intro-lead {
     font-size: 6vmin;
-    line-height: 7vw;
+    line-height: 7.5vw;
   }
   .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
     font-size: 3vmin;
