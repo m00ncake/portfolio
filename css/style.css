@@ -1393,7 +1393,8 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Lato', sans-serif;  
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
@@ -2575,7 +2576,7 @@ pre code {
   }
 
   .col-md-offset-1 {
-    margin-left: 8.33333%;
+    margin-left: 10.33333%;
   }
 
   .col-md-offset-2 {
@@ -6542,7 +6543,8 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Lato', sans-serif;  
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6664,7 +6666,8 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Lato', sans-serif;  
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -7324,7 +7327,8 @@ button.close {
   }
 }
 body {
-  font-family: "Roboto", arial, sans-serif;
+  /* font-family: "Roboto", arial, sans-serif; */
+  font-family: 'Lato', sans-serif;  
   font-weight: 300;
   font-size: 14px;
   line-height: 26px;
@@ -7403,8 +7407,9 @@ p {
   color: #383b3d;
   line-height: 93px;
   font-size: 72px;
-  font-weight: 100 !important;
-  font-family: Helvetica, "Montserrat", arial, sans-serif;
+  font-weight: 300;
+  /* font-family: Helvetica, "Montserrat", arial, sans-serif; */
+  font-family: 'Lato', sans-serif;  
   text-transform: none;
   letter-spacing: 5px;
   margin: 0;
@@ -7412,12 +7417,13 @@ p {
 .fh5co-intro-wrap .fh5co-intro .fh5co-intro-sub {
   color: #494c4e;
   font-size: 30px;
-  font-weight: 100;
-  font-family: "Roboto", arial, sans-serif;
-  font-family: Helvetica, "Sanchez", times, serif;
+  font-weight: 400;
+  /* font-family: "Roboto", arial, sans-serif;
+  font-family: Helvetica, "Sanchez", times, serif; */
+  font-family: 'Lato', sans-serif;  
   line-height: 51px;
   margin: 0 0 2.5em 0;
-  text-shadow: 2px 2px 2px white;
+  /* text-shadow: 2px 1px white; */
 }
 .fh5co-intro-wrap .fh5co-intro a {
   z-index: 0;
@@ -7551,7 +7557,7 @@ p {
 }
 
 .fh5co-project > a:last-child {
-  border: 3px solid #494c4e;
+  border: 3px solid #64686b;
 
 }
 .fh5co-project > a .fh5co-overlay {
@@ -7626,12 +7632,14 @@ button.src-code-btn:hover, button.site-btn:hover {
   line-height: 41px;
   color: white;
   padding: 1vw 5vw;
-  font-family: "Helvetica Neue", Monaco, Arial, sans-serif;
+  /* font-family: "Helvetica Neue", Monaco, Arial, sans-serif; */
+  font-family: 'Lato', sans-serif;  
   font-weight: 300;
   background-color: rgba(0, 0, 0, 0.53);
 }
 .fh5co-testimony blockquote > p span {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Lato', sans-serif;  
   font-weight: 100;
 }
 .fh5co-testimony blockquote > p .author {
@@ -7762,6 +7770,10 @@ button.src-code-btn:hover, button.site-btn:hover {
     font-size: 2.5vmin;
     margin-bottom: 3em;
   }
+  /*************** Portfolio Summary ****************/
+  .project-summaries {
+    height: 156px;
+}
 
 }
 
@@ -7810,9 +7822,9 @@ button.src-code-btn:hover, button.site-btn:hover {
     line-height: 5vw;
     margin-bottom: 2.5em;
   }
-  /*************** Project Info Height ***************/
-  .col-md-3.project-info-container {
-    height: 45vw;
+  /*************** Portfolio Summary ****************/
+  .project-summaries {
+    height: 156px;
   }
 }
 
@@ -7854,9 +7866,9 @@ button.src-code-btn:hover, button.site-btn:hover {
   top: 2px;
   font-size: 28px;
   }
-  /*************** Project Info Height ***************/
-  .col-md-3.project-info-container {
-    height: 55vw;
+  /*************** Portfolio Summary ****************/
+  .project-summaries {
+    height: 165px;
   }
 }
 
@@ -7930,6 +7942,13 @@ button.src-code-btn:hover, button.site-btn:hover {
   /*************** Project Info Height ***************/
   .col-md-3.project-info-container {
     height: 75vw;
+  }
+  /**************** Life Moto  ****************/
+  .fh5co-testimony blockquote > p {
+    font-size: 19px;
+  }
+  blockquote {
+    padding: 5px 5px;
   }
 }
 
