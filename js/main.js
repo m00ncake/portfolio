@@ -407,10 +407,10 @@
 
 
 	// Tech icon Description
-	$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.node, .to-animate.drupal, .to-animate.git, .to-animate.photo").hide();
+	$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.ember, .to-animate.node, .to-animate.php, .to-animate.drupal, .to-animate.word, .to-animate.git, .to-animate.photo").hide();
 	
 	var showTechDescription = function(tech) {
-		$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.node, .to-animate.drupal, .to-animate.git, .to-animate.photo").hide();
+		$(".to-animate.html, .to-animate.css, .to-animate.js, .to-animate.jq, .to-animate.boot, .to-animate.sass, .to-animate.react, .to-animate.ember, .to-animate.node, .to-animate.php, .to-animate.drupal, .to-animate.word, .to-animate.git, .to-animate.photo").hide();
 		$(".to-animate." + tech).show();
 	};
 
